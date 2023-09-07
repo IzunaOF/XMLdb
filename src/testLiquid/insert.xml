@@ -10,10 +10,10 @@
         http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
     
     <changeSet author="user" id="example">
-        <insert tableName="actor">
-            <column name="firstname" value="Leonardo"/>
-            <column name="lastname" value="Bloqueio"/>
-            <column name="twitter" value="Levantador"/>
+        <insert tableName="pessoa">
+            <column name="firstname" value="Filipe"/>
+            <column name="lastname" value="Tecnico"/>
+            <column name="cpf" value="O DBA"/>
         </insert>
     </changeSet>
 
