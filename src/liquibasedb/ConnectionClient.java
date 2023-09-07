@@ -13,9 +13,9 @@ public class ConnectionClient {
     public static Connection getConnection() {
         if (conexao == null) {
             try {
-                String url = LiquibaseDB.dotenv.get("DB_URL") ;
-                String user = LiquibaseDB.dotenv.get("DB_USER") ;
-                String password = LiquibaseDB.dotenv.get("DB_PASSWORD") ;
+                String url = "jdbc:postgresql://localhost:5432/liquibaseTest";
+                String user = "postgres" ;
+                String password = "senai";
 
                 conexao = DriverManager.getConnection(url, user, password);
                 
